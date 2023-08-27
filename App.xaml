@@ -1,0 +1,19 @@
+﻿<Application x:Class="MultithreadingAndAsync.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:MultithreadingAndAsync"
+             
+             xmlns:viewModel="clr-namespace:MultithreadingAndAsync.ViewModel"
+             xmlns:view="clr-namespace:MultithreadingAndAsync.View"
+             StartupUri="..\View\HomeView.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+
+
+            <DataTemplate DataType="x:Type viewModel:MainViewModel">
+                <view:HomeView></view:HomeView>
+            </DataTemplate>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
